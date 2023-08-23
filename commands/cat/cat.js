@@ -1,12 +1,11 @@
 const { SlashCommandBuilder } = require("discord.js");
 const snoowrap = require("snoowrap");
-require('dotenv').config()
 
 const reddit = new snoowrap({
-    user_agent: process.env.USER_AGENT,
-    client_id: process.env.CLIENT_ID,
-    client_secret: process.env.CLIENT_SECRET,
-    refreshToken: process.env.REFRESH_TOKEN
+    user_agent: "USER_AGENT",
+    client_id: "CLIENT_ID",
+    client_secret: "CLIENT_SECRET",
+    refreshToken: "REFRESH_TOKEN"
 })
 
 const subreddits = [
